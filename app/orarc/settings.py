@@ -129,3 +129,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
+
+
+ADMIN_EMAIL_FROM = os.environ.get("ADMIN_EMAIL_FROM", ""),
+ADMIN_EMAIL_TO = os.environ.get("ADMIN_EMAIL_TO", ""),
